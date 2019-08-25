@@ -5,8 +5,8 @@ $im = imagecreatefrompng("sign-40.png");
 $weekarray=array("日","一","二","三","四","五","六"); //先定义一个数组
 
 //获取来路IP
-$ip = $_SERVER['HTTP_CF_CONNECTING_IP'];//使用Cloudflare请去掉本行注释，其它CDN请查阅CDN提供商的文档
-//$ip = $_SERVER['REMOTE_ADDR'];//若使用上一行配置请注释本行
+//$ip = $_SERVER['HTTP_CF_CONNECTING_IP'];//使用Cloudflare请去掉本行注释，其它CDN请查阅CDN提供商的文档
+$ip = $_SERVER['REMOTE_ADDR'];//若使用上一行配置请注释本行
 
 //调用数统计
 $fileName = 'showcounter.txt';
